@@ -1,21 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package kuascmcgame;
 
+package kuascmcgame;
+import javax.swing.*;
+import java.awt.*;
 /**
  *
  * @author 陳沂
  */
-public class KUASCMCGAME {
+public class KUASCMCGAME extends JFrame {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        /*
+        JFrame Frame = new JFrame("KUASCMC Music Game");
+        Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        Frame.setVisible(true);
+        Frame.setSize(650,500);
+        Frame.setLocationRelativeTo(null);
+
+        */
+        
     }
     
 }
