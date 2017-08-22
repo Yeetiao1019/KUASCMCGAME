@@ -2,6 +2,10 @@
 package kuascmcgame;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
+import kuascmcgame.score;
+
+
 /**
  *
  * @author 陳沂
@@ -24,12 +28,12 @@ public class KUASCMCGAME extends JFrame {
         word.setBorder(BorderFactory.createLineBorder(Color.blue, 2));
         difficulty.setLayout(null);
         difficulty.setBorder(BorderFactory.createLineBorder(Color.yellow, 2));
-        JButton easy = new JButton("簡單");
+        JButton easy = new JButton("開始");
         JButton normal = new JButton("中等");
         JButton hard = new JButton("困難");
         
-        easy.setSize(new Dimension(100,50));
-        easy.setLocation(100,80);
+        easy.setSize(new Dimension(100,50)); //設定按鈕大小
+        easy.setLocation(275,80);            //設定按鈕位置
         normal.setSize(new Dimension(100,50));
         normal.setLocation(300,80);
         hard.setSize(new Dimension(100,50));
@@ -66,8 +70,8 @@ public class KUASCMCGAME extends JFrame {
         difficulty.add(percussion);
         */
         difficulty.add(easy);
-        difficulty.add(normal);
-        difficulty.add(hard);
+       // difficulty.add(normal);
+       // difficulty.add(hard);
         word.add(kuasimg,BorderLayout.CENTER);
         word.add(cmcimg,BorderLayout.SOUTH);
         container.add(word);
@@ -78,6 +82,14 @@ public class KUASCMCGAME extends JFrame {
         setVisible(true);
         setSize(650,500);
         setLocationRelativeTo(null);
+        
+        easy.addActionListener(new ActionListener(){    //按鈕事件
+           public void actionPerformed(ActionEvent e){
+               new play1();
+               dispose(); // 關閉視窗
+               System.out.println(score);
+           } 
+        });
         
         
         
@@ -90,5 +102,6 @@ public class KUASCMCGAME extends JFrame {
         new KUASCMCGAME();
         
     }
+   
     
 }

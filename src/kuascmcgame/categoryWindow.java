@@ -13,6 +13,7 @@ import javax.swing.border.Border;
  */
 public class categoryWindow extends JFrame {
     
+    private Container container;
     private JPanel category;
     private JButton bowstring;
     private JButton wind;
@@ -22,29 +23,37 @@ public class categoryWindow extends JFrame {
     
     public static void main(String[] args) {
 
-        JFrame Frame = new JFrame("KUASCMC Music Game");
-        Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        Frame.setVisible(true);
-        Frame.setSize(150,300);
-        Frame.setLocationRelativeTo(null);
-
         
+
+        new categoryWindow();
         
         
     }
     
-    public categoryWindow() throws HeadlessException {
+     categoryWindow()  {
         
-        category = new JPanel(new FlowLayout());
-      //  category.setLayout(new FlowLayout(FlowLayout.CENTER));
-        category.setBounds(0,0,50,30);        
+        container = getContentPane();
+        container.setLayout(new GridLayout(1,1));
+        
+        category = new JPanel();
+        category.setLayout(null);
+        category.setBorder(BorderFactory.createLineBorder(Color.blue, 2));  
+        
         bowstring = new JButton ("拉弦");
-        bowstring.setVisible(true);
-        category.add(bowstring,FlowLayout.CENTER);
+        bowstring.setLocation(50,30);
+        bowstring.setSize(50,50);
         
-        getContentPane().add(category);
-        pack();
-     // setLayout(new BorderLayout());
-     //  add("North",category);
+        container.add(category);
+        category.add(bowstring);
+   
+        
+        
+        
+        
+        setTitle("KUASCMC Music Game");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        setSize(150,300);
+        setLocationRelativeTo(null);
     }
 }
