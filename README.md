@@ -1,9 +1,11 @@
-2017��߰������ά�ޤj�� �嶮��֪����ιŦ~�عC���s�@
+2017國立高雄應用科技大學 典雅國樂社社團嘉年華遊戲製作
 
-�D�D�GKUASCMC-�q���H�Q
+主題：KUASCMC-猜謎隨想
 
-��B�c�Q�G�ϥ�JAVA Swing�]�p�@�{���A�C�����ǥѲ�ť���h����ǲμ־��ҵo�X���n���Ӳq�Q�O��ؼ־��C
+初步構想：使用JAVA Swing設計一程式，遊玩者藉由聆聽眾多中國傳統樂器所發出的聲音來猜想是何種樂器。
 
-�Բӻ����G�D�����ץi�����춥�B�����B�������A�åi��ܲq�Q���w�־�(�p�G�ԩ��B�j�ޡB�u���B������)�εL�����A�D�ت���U���־����D�ܤQ�D�C
+詳細說明：播放獨奏曲或是協奏曲，遊玩者猜想主奏為何種樂器，題目初估各類樂器五題至十題。
 
-��L�\��G�O���O�BQRCODE
+其他功能：記分板、QRCODE
+
+第一版2017/09/13 完成
