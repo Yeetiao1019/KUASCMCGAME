@@ -112,7 +112,7 @@ public class play1 extends JFrame {
            play.addActionListener(new ActionListener(){    //播放
            public void actionPerformed(ActionEvent e){
                 
-                   thread1 = new Thread(new Runnable(){  //播放線程
+            thread1 = new Thread(new Runnable(){  //播放線程
                public void run() {
                         String playcommand = e.getActionCommand();
                if(playcommand == "play"){

@@ -3,7 +3,6 @@ package kuascmcgame;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import kuascmcgame.score;
 
 
 /**
@@ -17,14 +16,14 @@ public class KUASCMCGAME extends JFrame {
         container.setLayout(new GridLayout(2,1));
        // container.setSize(new Dimension(650,500));
        // container.setLayout(new FlowLayout());
-        ImageIcon kuas = new ImageIcon(KUASCMCGAME.class.getResource("kuas.png"));
-        ImageIcon cmc = new ImageIcon(KUASCMCGAME.class.getResource("cmc.png"));
+        ImageIcon kuas = new ImageIcon(KUASCMCGAME.class.getResource("kuascmc3.png"));
+        //ImageIcon cmc = new ImageIcon(KUASCMCGAME.class.getResource("cmc.png"));
         JLabel kuasimg  = new JLabel(kuas);
-        JLabel cmcimg  = new JLabel(cmc);
+     //   JLabel cmcimg  = new JLabel(cmc);
         JPanel difficulty = new JPanel();
         JPanel word = new JPanel();
         
-        word.setLayout(new BorderLayout());
+        word.setLayout(new GridLayout(1,1));
         word.setBorder(BorderFactory.createLineBorder(Color.blue, 2));
         difficulty.setLayout(null);
         difficulty.setBorder(BorderFactory.createLineBorder(Color.yellow, 2));
@@ -41,14 +40,11 @@ public class KUASCMCGAME extends JFrame {
         
         int kuaswidth = 350;
         int kuasheight = 69;
-        int cmcwidth = 200;
-        int cmcheight = 70;
-        kuas.setImage(kuas.getImage().getScaledInstance(kuaswidth,kuasheight,Image.SCALE_DEFAULT)); 
-        kuasimg.setSize(new Dimension(kuaswidth,kuasheight));
+
+        kuas.setImage(kuas.getImage().getScaledInstance(650,235,Image.SCALE_DEFAULT)); 
+        kuasimg.setSize(500,350);
         kuasimg.setLocation(50,50);
-        cmc.setImage(cmc.getImage().getScaledInstance(cmcwidth,cmcheight,Image.SCALE_DEFAULT)); 
-        cmcimg.setSize(new Dimension(cmcwidth,cmcheight));
-        cmcimg.setLocation(100,100);
+
        /*
         JButton bowstring = new JButton("拉弦");
         JButton wind = new JButton("吹管");
@@ -72,22 +68,22 @@ public class KUASCMCGAME extends JFrame {
         difficulty.add(easy);
        // difficulty.add(normal);
        // difficulty.add(hard);
-        word.add(kuasimg,BorderLayout.CENTER);
-        word.add(cmcimg,BorderLayout.SOUTH);
+        word.add(kuasimg);
+     //   word.add(cmcimg,BorderLayout.SOUTH);
         container.add(word);
         container.add(difficulty);
         
         setTitle("KUASCMC Music Game");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
-        setSize(650,500);
+        setSize(750,600);
         setLocationRelativeTo(null);
         
         easy.addActionListener(new ActionListener(){    //按鈕事件
            public void actionPerformed(ActionEvent e){
                new play1();
                dispose(); // 關閉視窗
-               System.out.println(score);
+               //System.out.println(score);
            } 
         });
         

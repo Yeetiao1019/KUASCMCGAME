@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/kuascmcgame/play2gui.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>39</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play2.java</file>
-            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/score.java</file>
-            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play1.java</file>
-            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/KUASCMCGAME.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play3gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play8gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play2gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play6gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play5gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/calcgui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play4gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play1gui.java</file>
+            <file>file:/Users/yee/Documents/KUASCMCGAME/KUASCMCGAME/src/kuascmcgame/play7gui.java</file>
         </group>
     </open-files>
 </project-private>
