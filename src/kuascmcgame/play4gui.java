@@ -64,6 +64,7 @@ public class play4gui extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("KUASCMCGAME");
@@ -127,6 +128,14 @@ public class play4gui extends javax.swing.JFrame {
         jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kuascmcgame/choose/suona.png"))); // NOI18N
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 90, 210));
 
+        jButton2.setText("Previous");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 110, 60));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -151,9 +160,16 @@ public class play4gui extends javax.swing.JFrame {
     private void NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextActionPerformed
                new play5gui();
                soundplayer.close();
-               System.out.println();
+               System.out.println("Close Sound and play4. Open Play5");
                dispose();
     }//GEN-LAST:event_NextActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new play3gui();
+        soundplayer.close();
+        System.out.println("Close Sound and play4. Open Play3");
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -195,6 +211,7 @@ public class play4gui extends javax.swing.JFrame {
     private javax.swing.JButton Next;
     private javax.swing.JButton Play;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;

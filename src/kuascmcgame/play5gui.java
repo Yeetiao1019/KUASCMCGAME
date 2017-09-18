@@ -64,6 +64,7 @@ public class play5gui extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("KUASCMCGAME");
@@ -100,7 +101,7 @@ public class play5gui extends javax.swing.JFrame {
         });
         getContentPane().add(Next, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 110, 60));
 
-        jLabel3.setText("第五題");
+        jLabel3.setText("第四題");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
@@ -128,6 +129,14 @@ public class play5gui extends javax.swing.JFrame {
         jLabel8.setText("琵琶");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
+        jButton2.setText("Previous");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 110, 60));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -152,7 +161,7 @@ public class play5gui extends javax.swing.JFrame {
     private void NextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NextActionPerformed
                new play6gui();
                soundplayer.close();
-               System.out.println();
+               System.out.println("Close Sound and play5. Open Play6");
                dispose();
         /*
                soundplayer.close();
@@ -160,6 +169,13 @@ public class play5gui extends javax.swing.JFrame {
         */
         
     }//GEN-LAST:event_NextActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new play3gui();
+        soundplayer.close();
+        System.out.println("Close Sound and play5. Open Play4");
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -201,6 +217,7 @@ public class play5gui extends javax.swing.JFrame {
     private javax.swing.JButton Next;
     private javax.swing.JButton Play;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

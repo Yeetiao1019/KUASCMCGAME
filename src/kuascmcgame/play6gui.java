@@ -64,6 +64,7 @@ public class play6gui extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
+        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("KUASCMCGAME");
@@ -100,7 +101,7 @@ public class play6gui extends javax.swing.JFrame {
         });
         getContentPane().add(Next, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 90, 110, 60));
 
-        jLabel3.setText("第六題");
+        jLabel3.setText("第五題");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 20, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
@@ -127,6 +128,14 @@ public class play6gui extends javax.swing.JFrame {
         jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/kuascmcgame/choose/ca.png"))); // NOI18N
         getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 110, 190));
 
+        jButton2.setText("Previous");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 110, 60));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -152,9 +161,16 @@ public class play6gui extends javax.swing.JFrame {
 
               new play7gui();
                soundplayer.close();
-               System.out.println();
+               System.out.println("Close Sound and play6. Open Play7");
                dispose();
     }//GEN-LAST:event_NextActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        new play5gui();
+        soundplayer.close();
+        System.out.println("Close Sound and play6. Open Play5");
+        dispose();
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -198,6 +214,7 @@ public class play6gui extends javax.swing.JFrame {
     private javax.swing.JButton Next;
     private javax.swing.JButton Play;
     private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
